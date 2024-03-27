@@ -101,29 +101,26 @@ class GoToJail(Space):
 
 
 ### Working on getting this to work, being a dictionary at the moment, will change to 2d array
-spaces = ['Go', Brown[0], 'Community Chest', Brown[1], 'Income Tax', Stations[0],
-          fLblue[0], 'Chance', Lblue[1], 'Pentonville Road', 'Jail', 'Pall Mall', 'Electric Company',
-=======
+spaces = ['Go', Brown[0][0], 'Community Chest', Brown[1[1], Tax[0], Stations[0][0],
+          Lblue[0][0], 'Chance', Lblue[1][1], Lblue[2][2], 'Jail', Pink[0][0], Utilities[0][0],
+          Pink[1][1], Pink[2][2], Stations[1][1], Orange[0][0], 'Community Chest',
+          Orange[1][1], Orange[2][2], 'Free Parking', Red[0][0], 'Chance', Red[1][1], Red[2][2],
+          Stations[2][2], Yellow[0][0], Yellow[1][1], Utilities[1][1], Yellow[2][2], 'Go To Jail',
+          Green[0][0], Green[1][1], 'Community Chest', Green[2][2], Stations[3][3], 'Chance',
+          Dblue[0][0], Tax[1][1], Dblue[1][1]]
+Brown = [["Old Kent Road","Whitechapel"],[60, 60]]
+Lblue = [["The Angel Islington", "Euston Road", "Pentonville Road"],[100, 100, 120]]
+Pink = [["Pall Mall","Whitehall", "Northumberland Avenue"],[140, 140, 160]]
+Orange = [["Bow Street", "Marlborough Street", "Vine Street"],[180, 180, 200]]
+Red = [["Strand", "Fleet Street", "Trafalgar Square"],[220, 220, 240]]
+Yellow = [["Leicester Square", "Coventry Street", "Piccadilly"],[260, 260, 280]]
+Green = [["Regent Street", "Oxford Street", "Bond Street"],[300, 300, 320]]
+Dblue = {"Park Lane": 350, "Mayfair": 400} [[
+Stations = {"King's Cross Station": 200, "Marylebone Station": 200, "Fenchurch Street Station": 200, "Liverpool Street Station": 200}
+Tax = {"Income Tax": 200, "Luxury Tax": 100}
+Utilities = {"Electric Company": 150, "Water Works": 150}
+Misc = ("Go", "Chance", "Community Chest", "Free Parking", "Jail", "Go To Jail")
 
-# Working on getting this to work, being a dictionary at the moment, will change to 2d array
-
-
-
-          f'Whitehall', 'Northumberland Avenue', 'Pikmin Station', 'Bow Street', 'Community Chest',
-          f'Marlborough street', 'Vine Street', 'Free Parking', 'Strand', 'Chance', 'Fleet Street', 'Trafalgar Square',
-          f'Fenchurch Station', 'Leicester Square', 'Coventry Street', 'Water Works', 'Piccadilly', 'Go To Jail',
-          f'Regent Street', 'Oxford Street', 'Community Chest', 'Bond Street', 'Liverpool street station', 'Chance',
-          f'Park Lane', 'Luxury Tax', 'Mayfair']
-Brown = {"Old Kent Road": 60, "Whitechapel": 60}
-Lblue = {"The Angel Islington": 100, "Euston Road": 100, "Pentonville Road": 120}
-Pink = {"Pall Mall": 140, "Whitehall": 140, "Northumberland Avenue": 160}
-Orange = {"Bow Street": 180, "Marlborough Street": 180, "Vine Street": 200}
-Red = {"Strand": 220, "Fleet Street": 220, "Trafalgar Square": 240}
-Yellow = {"Leicester Square": 260, "Coventry Street": 260, "Piccadilly": 280}
-Green = {"Regent Street": 300, "Oxford Street": 300, "Bond Street": 320}
-Dblue = {"Park Lane": 350, "Mayfair": 400}
-Stations = {"King's Cross Station": 200, "Marylebone Station": 200, "Fenchurch Street Station": 200,
-            "Liverpool Street Station": 200}
 
 # Roll 2 dice function
 def rollDice(rollCounter):
